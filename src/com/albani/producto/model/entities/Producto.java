@@ -8,11 +8,14 @@ public class Producto {
 
     private Float precio;
 
-    public Producto(Integer id, String nombre, Float precio) {
+    private Categoria categoria; // Nuevo atributo
+
+    public Producto(Integer id, String nombre, Float precio, Categoria categoria) {
 
         this.id = id;
         this.nombre = nombre;
         this.precio = precio;
+        this.categoria = categoria; // Inicializar la categoría
     }
 
     public Integer getId() {
@@ -37,6 +40,14 @@ public class Producto {
 
     public void setPrecio(Float precio) {
         this.precio = precio;
+    }
+
+    public Categoria getCategoria() { // Nuevo método getter
+        return categoria;
+    }
+
+    public void setCategoria(Categoria categoria) { // Nuevo método setter
+        this.categoria = categoria;
     }
 
 
