@@ -23,7 +23,6 @@ public class ProductoRepository {
         }
     }
 
-
     //ACTUALIZAR UN PRODUCTO
     public static void actualizarProducto(ArrayList<Producto> listaProductos, Producto productoActualizado){
         // Este método toma una lista de productos y un producto actualizado.
@@ -53,5 +52,4 @@ public class ProductoRepository {
             }
         }
     }
-
 }

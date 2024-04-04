@@ -5,10 +5,13 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        // Se crean instancias de las clases ProductoController y CategoriaController
         ProductoController productoController = new ProductoController();
         CategoriaController categoriaController = new CategoriaController();
+        // Se crea una instancia de la clase Scanner para leer la entrada del usuario
         Scanner scanner = new Scanner(System.in);
 
+        // Bucle infinito que muestra un menú al usuario hasta que decida salir
         while (true) {
             System.out.println("1. Gestionar productos");
             System.out.println("2. Gestionar categorías");
